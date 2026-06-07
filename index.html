@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#07080d" />
+
+    <!-- Primary meta -->
+    <title>HABITAT — a gamified habit tracker that grows a living world</title>
+    <meta name="description" content="HABITAT turns your daily habits into XP, gems, and a living world that grows with you. Streaks, weekly bosses, pet companions, achievements, and a 3D parallax island — all in your browser. Free, no signup required." />
+    <meta name="keywords" content="habit tracker, gamified habit tracker, habit app, daily habits, streak app, productivity, habit game, HABITAT" />
+    <link rel="canonical" href="https://habitat.app/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://habitat.app/" />
+    <meta property="og:title" content="HABITAT — a gamified habit tracker that grows a living world" />
+    <meta property="og:description" content="Turn daily habits into XP, gems, and a living world. Free in your browser, no signup." />
+    <meta property="og:image" content="https://habitat.app/og.svg" />
+    <meta property="og:site_name" content="HABITAT" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="HABITAT — a gamified habit tracker" />
+    <meta name="twitter:description" content="Habits that grow a world. Free, no signup, works offline." />
+    <meta name="twitter:image" content="https://habitat.app/og.svg" />
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- JSON-LD: software app -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "HABITAT",
+      "alternateName": "HABITAT habit tracker",
+      "url": "https://habitat.app",
+      "applicationCategory": "ProductivityApplication",
+      "operatingSystem": "Any",
+      "description": "A gamified habit tracker that grows a living world with you. XP, streaks, pets, weekly bosses, achievements.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "featureList": [
+        "Habit tracking with streaks",
+        "XP, levels, and titles",
+        "Living world that grows with your habits",
+        "Weekly boss fights",
+        "Pet companions",
+        "Habit fusion recipes",
+        "Achievement constellation",
+        "Cosmetic shop",
+        "Daily reminders",
+        "Optional cloud sync"
+      ]
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-ink-950 text-slate-100 antialiased">
+    <!-- noscript fallback content for SEO -->
+    <noscript>
+      <h1>HABITAT — a gamified habit tracker that grows a living world</h1>
+      <p>HABITAT is a free, browser-based habit tracker with XP, streaks, weekly bosses, pet companions, achievement constellations, and a living world that grows with you. No signup required. Your data stays in your browser.</p>
+    </noscript>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://habitat.app/sitemap.xml

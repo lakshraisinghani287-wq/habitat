@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07080d"/>
+      <stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="h" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="0.5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.15">
+    <circle cx="200" cy="120" r="2" fill="#5eead4"/>
+    <circle cx="400" cy="80" r="1.5" fill="#a78bfa"/>
+    <circle cx="700" cy="140" r="2" fill="#f472b6"/>
+    <circle cx="1000" cy="100" r="1.5" fill="#fbbf24"/>
+    <circle cx="1100" cy="200" r="1.5" fill="#5eead4"/>
+  </g>
+  <text x="600" y="290" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="140" font-weight="700" fill="url(#h)">HABITAT</text>
+  <text x="600" y="370" text-anchor="middle" font-family="Inter, sans-serif" font-size="32" fill="#94a3b8">a gamified habit tracker</text>
+  <text x="600" y="420" text-anchor="middle" font-family="Inter, sans-serif" font-size="28" fill="#cbd5e1">that grows a living world with you</text>
+  <g transform="translate(600, 510)">
+    <rect x="-200" y="-30" width="400" height="60" rx="30" fill="none" stroke="#5eead4" stroke-width="2"/>
+    <text x="0" y="8" text-anchor="middle" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#5eead4">habitat.app</text>
+  </g>
+</svg>

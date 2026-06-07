@@ -1,0 +1,12 @@
+{
+  "name": "HABITAT",
+  "short_name": "HABITAT",
+  "description": "A gamified habit tracker that grows a living world with you.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07080d",
+  "theme_color": "#07080d",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
