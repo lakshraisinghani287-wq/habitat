@@ -3,40 +3,28 @@ import { motion } from 'framer-motion'
 import { LivingHabitat } from '../components/LivingHabitat'
 import { HabitCard } from '../components/HabitCard'
 import { BossFight } from '../components/BossFight'
-import { Card, SectionTitle, Pill, ProgressBar } from '../components/Card'
-import { Icon, CategoryIcon } from '../components/Icon'
-import { todayKey, seasonMeta, currentSeason, CATEGORIES } from '../lib/constants'
+import { Card, SectionTitle } from '../components/Card'
+import { Icon } from '../components/Icon'
+import { todayKey, CATEGORIES } from '../lib/constants'
 import { useDailyQuote } from '../lib/quotes'
 import { useState } from 'react'
 import { HabitEdit } from '../components/HabitEdit'
 
 const Greeting = () => {
-  const s = useGame()
-  const hour = new Date().getHours()
-  const greet = hour < 6 ? 'Burning the midnight oil' : hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening'
-  const season = seasonMeta[s.season] || seasonMeta[currentSeason()]
   const quote = useDailyQuote()
   return (
-    <div className="card bg-gradient-to-br from-white/5 to-transparent">
-      <div className="flex items-center gap-2 text-[11px] uppercase tracking-wider text-slate-400">
-        <Icon name="sparkle" className="w-3.5 h-3.5 text-neon-mint" /> {greet}
-      </div>
-      <div className="h-display text-2xl sm:text-3xl mt-1 text-white">
-        {s.user.name}, <span className="shimmer-text">today is yours.</span>
-      </div>
-
+    <div className="card bg-gradient-to-br from-white/5 to-transparent text-center py-10">
       {quote && (
         <motion.blockquote
           key={quote.q}
           initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}
-          className="mt-4 border-l-2 border-neon-violet/60 pl-4 text-slate-300"
+          className="max-w-2xl mx-auto"
         >
-          <p className="italic text-sm sm:text-base leading-relaxed">"{quote.q}"</p>
-          <footer className="mt-1 text-[11px] uppercase tracking-wider text-slate-500">— {quote.a}</footer>
+          <p className="h-display text-2xl sm:text-4xl md:text-5xl text-white leading-tight">
+            "{quote.q}"
+          </p>
         </motion.blockquote>
       )}
-
-      <div className="mt-3 text-sm text-slate-400">{season.name} · {season.bonus}</div>
     </div>
   )
 }
